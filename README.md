@@ -1,1 +1,0 @@
-# mandhi_finder
