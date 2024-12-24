@@ -1,63 +1,84 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #fff7e6;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     color: #333;
-    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
 }
 
-/* Header */
+/* Header Section */
 header {
-    background-color: #ff9e42;
-    color: white;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-header .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-header .logo img {
-    height: 50px;
-}
-
-header .tagline {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-.main-visual img {
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    margin-top: 20px;
-    font-size: 2rem;
+header h1 {
+    font-size: 2.5rem;
     color: #ff6f00;
 }
 
-p {
-    font-size: 1.1rem;
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Main Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.explore-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mandhi-card {
+    width: 300px;
+    background-color: #fff8f3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mandhi-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.mandhi-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mandhi-card:hover img {
+    transform: scale(1.1);
+}
+
+.mandhi-card h2 {
+    font-size: 1.5rem;
+    color: #ff6f00;
     margin: 10px 0;
 }
 
-/* Call-to-Action Buttons */
-.cta-buttons {
-    margin-top: 20px;
+.mandhi-card p {
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #555;
 }
 
 .btn {
@@ -66,89 +87,28 @@ p {
     padding: 10px 20px;
     font-size: 1rem;
     text-decoration: none;
-    color: white;
+    color: #fff8f3;
+    background-color: #ff6f00;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-.btn.explore {
-    background-color: #ff6f00;
-}
-
-.btn.signup {
-    background-color: #ffa726;
 }
 
 .btn:hover {
     background-color: #e65100;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    font-size: 0.9rem;
+    text-align: center;
     margin-top: 20px;
-}
-/* Explore Page */
-header {
-    background-color: #ff9e42;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #666;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
-.explore-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-}
-
-.mandhi-card {
-    width: 300px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-}
-
-.mandhi-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.mandhi-card h2 {
-    margin: 15px 0 10px;
+footer a {
     color: #ff6f00;
-    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-.mandhi-card p {
-    font-size: 1rem;
-    padding: 10px;
-    color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+footer a:hover {
+    text-decoration: underline;
 }
