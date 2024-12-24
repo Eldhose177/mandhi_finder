@@ -1,53 +1,48 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #ffffff;
-    padding: 10px;
+    background-image: url('https://i.pinimg.com/1200x/c5/24/32/c52432ba086e053ef25881783c34f60e.jpg') /* Replace white with the image */
+    
 }
 
-/* Header Section */
+/* Header */
 header {
+    background-color: rgba(255, 158, 66, 0.8); /* Transparent background */
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
+    margin: 0;
     font-size: 2.5rem;
-    color: #ff6f00;
 }
 
 header p {
+    margin-top: 10px;
     font-size: 1.2rem;
-    color: #666;
 }
 
-/* Main Section */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Explore Section */
 .explore-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
 
+/* Mandhi Cards */
 .mandhi-card {
     width: 300px;
-    background-color: #fff8f3;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -62,53 +57,28 @@ header p {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.mandhi-card:hover img {
-    transform: scale(1.1);
+    border-bottom: 2px solid #ff6f00;
 }
 
 .mandhi-card h2 {
-    font-size: 1.5rem;
+    margin: 15px 0 10px;
     color: #ff6f00;
-    margin: 10px 0;
+    font-size: 1.5rem;
 }
 
 .mandhi-card p {
-    padding: 0 10px;
     font-size: 1rem;
-    color: #555;
+    padding: 10px;
+    color: #333;
 }
 
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #fff8f3;
-    background-color: #ff6f00;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e65100;
-}
-
-/* Footer Section */
+/* Footer */
 footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Transparent dark footer */
+    color: #fff;
     text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
     margin-top: 20px;
-    color: #666;
 }
 
-footer a {
-    color: #ff6f00;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
