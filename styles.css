@@ -93,5 +93,86 @@ footer {
     font-size: 0.9rem;
     margin-top: 20px;
 }
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Ensures all content is centered */
+}
+
+header {
+    background-color: #ff9900;
+    color: white;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 50px;
+    vertical-align: middle;
+}
+
+.logo h1 {
+    display: inline;
+    font-size: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Main section styles */
+main {
+    padding: 20px;
+}
+
+.main-visual img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* CTA button styles */
+.cta-buttons {
+    text-align: center; /* Centers the button container */
+    margin: 20px 0;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #cc7a00;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
 
 
